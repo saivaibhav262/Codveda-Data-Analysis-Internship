@@ -1,8 +1,6 @@
-# -------------------------------------------------
 # Level 1 - Task 3: Basic Data Visualization
 # Tools: Python, matplotlib, seaborn
 # Dataset: cleaned_dataset.csv
-# -------------------------------------------------
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -17,9 +15,8 @@ os.makedirs(output_folder, exist_ok=True)
 print("Loading cleaned dataset...")
 df = pd.read_csv("iris_cleaned_dataset.csv")
 
-# -----------------------------------------------
+
 # 1. BAR PLOT - Average Sepal Length per Species
-# -----------------------------------------------
 plt.figure(figsize=(8, 6))
 sns.barplot(x="species", y="sepal_length", data=df)
 plt.title("Average Sepal Length by Species")
@@ -28,9 +25,8 @@ plt.ylabel("Sepal Length")
 plt.savefig(f"{output_folder}/barplot_sepal_length.png")
 plt.show()
 
-# -----------------------------------------------
+
 # 2. LINE CHART - Sepal Length Trend (Sample Order)
-# -----------------------------------------------
 plt.figure(figsize=(8, 6))
 plt.plot(df.index, df["sepal_length"], label="Sepal Length")
 plt.title("Sepal Length Trend")
@@ -40,9 +36,8 @@ plt.legend()
 plt.savefig(f"{output_folder}/linechart_sepal_length.png")
 plt.show()
 
-# -----------------------------------------------
+
 # 3. SCATTER PLOT - Petal Length vs Petal Width
-# -----------------------------------------------
 plt.figure(figsize=(8, 6))
 sns.scatterplot(
     x="petal_length",
@@ -59,3 +54,4 @@ plt.show()
 
 print("\nBasic Data Visualization Completed Successfully!")
 print("Plots saved in the 'plots' folder.")
+
