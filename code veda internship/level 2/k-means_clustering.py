@@ -1,6 +1,4 @@
-# ==========================================
 # LEVEL 2 - TASK 3: K-MEANS CLUSTERING
-# ==========================================
 
 print("🔥 K-MEANS CLUSTERING STARTED 🔥")
 
