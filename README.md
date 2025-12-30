@@ -31,38 +31,36 @@ All tasks were completed with original code, following ethical guidelines and be
 Codveda-Data-Analysis-Internship
 
 --- datasets
-   --- correlation_matrix
-   --- house prediction data set
-   --- iris
-   --- iris_cleaned_dataset
-   --- sentiment dataset
-   --- stock prices data set
+   , correlation_matrix
+   , house prediction data set
+   , iris
+   , iris_cleaned_dataset
+   , sentiment dataset
+   , stock prices data set
 
 --- level 1
-  --- basic visualization
-  --- data_cleaning
-  --- eda_analysis
+  , basic visualization
+  , data_cleaning
+  , eda_analysis
 
-  --- level 1 output png
-  --- barplot_sepal_length.png
-  --- linechart_sepal_length.png
-  --- linechart_sepal_length.png
+--- level 1 output png
+  , barplot_sepal_length.png
+  , linechart_sepal_length.png
+  , linechart_sepal_length.png
 
 --- level 2
-  ---k-means_clustering
-  --- linear_regration
-  --- time_series_analysis
+  , k-means_clustering
+  , linear_regration
+  , time_series_analysis
   
 --- level 2 output png
-  --- elbow_method.png
-  --- kmeans_clusters.png
-  --- moving_average_plot.png
-  --- stock_price_trend.png
-  --- time_series_decomposition.png
+  , elbow_method.png
+  , kmeans_clusters.png
+  , moving_average_plot.png
+  , stock_price_trend.png
+  , time_series_decomposition.png
 --- README.md
 
-
--->Tasks Completed
 
 Level 1: Data Analysis Fundamentals
 
