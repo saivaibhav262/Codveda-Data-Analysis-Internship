@@ -1,7 +1,4 @@
-# ==========================================
 # LEVEL 2 - TASK 1: REGRESSION ANALYSIS
-# ==========================================
-
 # Step 1: Import libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -22,9 +19,8 @@ print("\nStatistical Summary:")
 print(df.describe())
 
 # Step 4: Select independent and dependent variables
-X = df[['sepal_length']]   # Independent variable
-y = df['petal_length']     # Dependent variable
-
+X = df[['sepal_length']]   
+y = df['petal_length']     
 # Step 5: Split into training and testing data
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
@@ -50,6 +46,5 @@ print("\nModel Parameters:")
 print("Coefficient (Slope):", model.coef_[0])
 print("Intercept:", model.intercept_)
 
-# Step 10: Conclusion
-print("\nConclusion:")
-print("Linear Regression successfully predicts petal_length from sepal_length.")
+
+
