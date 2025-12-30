@@ -1,14 +1,8 @@
-print("🔥 SCRIPT FILE IS EXECUTING 🔥")
-
-# ==========================================
 # LEVEL 2 - TASK 2: TIME SERIES ANALYSIS
-# ==========================================
 
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
-
-print("Program started...")
 
 # Step 1: Load dataset
 df = pd.read_csv("Stock Prices Data Set.csv")
@@ -31,7 +25,7 @@ elif 'Adj close' in df.columns:
 elif 'Price' in df.columns:
     price_series = df['Price']
 else:
-    raise Exception("❌ No price column found (Close / Adj Close / Price)")
+    raise Exception(" No price column found (Close / Adj Close / Price)")
 
 print("Price column selected successfully")
 
@@ -44,7 +38,7 @@ plt.ylabel("Price")
 plt.savefig("stock_price_trend.png")
 plt.show()
 
-print("✔ Stock price trend graph displayed & saved")
+print(" Stock price trend graph displayed & saved")
 
 # Step 6: Seasonal decomposition
 decomposition = seasonal_decompose(price_series, model='additive', period=30)
@@ -52,7 +46,7 @@ decomposition.plot()
 plt.savefig("time_series_decomposition.png")
 plt.show()
 
-print("✔ Time series decomposition completed")
+print(" Time series decomposition completed")
 
 # Step 7: Moving average
 df['Moving_Average'] = price_series.rolling(window=20).mean()
@@ -65,6 +59,6 @@ plt.title("Moving Average Smoothing")
 plt.savefig("moving_average_plot.png")
 plt.show()
 
-print("✔ Moving average smoothing applied")
+print(" Moving average smoothing applied")
 
-print("\n🎉 TIME SERIES ANALYSIS COMPLETED SUCCESSFULLY 🎉")
+
